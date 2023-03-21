@@ -1,9 +1,11 @@
-
+import { Section } from "./common/Section";
+import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
   return (
     <div>
-     hejjjjjjjjjjj
+      <GlobalStyle />
+     <Section />
     </div>
   );
 }
