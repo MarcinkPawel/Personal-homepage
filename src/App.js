@@ -5,7 +5,9 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-     <Section />
+     <Section 
+     heading={"czesc"}
+     />
     </div>
   );
 }
