@@ -1,13 +1,17 @@
 import { ThemeProvider } from "styled-components";
-import { Section } from "./common/Section";
 import { GlobalStyle } from "./GlobalStyle";
 import { theme } from "./theme";
+import { Main } from "./features/Main/index";
+import { Section } from "./common/Section";
+import { About } from "./common/About";
+import { Portfolio } from "./common/Portfolio";
+
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Section heading={"czesc"} />
+      <Main />
     </ThemeProvider>
   );
 }
