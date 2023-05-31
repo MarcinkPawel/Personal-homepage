@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { ReactComponent as gitIcon } from "../../images/gitIcon.svg";
 
-export const PortfolioStyled = styled.div`
+export const Wrapper = styled.div`
   width: 1216px;
   height: 824px;
-  background: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.color.whiteLilac};
   padding: 0;
   margin-bottom: 72px;
 `;
@@ -31,78 +32,18 @@ export const SubHeading = styled.p`
   color: ${({ theme }) => theme.color.black};
   margin: 0 0 24px 0;
 `;
-export const Icon = styled.img`
+export const Icon = styled(gitIcon)`
   width: 40px;
   height: 40px;
   border: none;
   margin-bottom: 12px;
+  color: ${({ theme }) => theme.color.scienceBlue};
 `;
 export const TailsList = styled.div`
+  margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
-`;
-
-export const Tail = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-  height: 322px;
-  width: 592px;
-  border: 6px solid ${({ theme }) => theme.color.violet};
-  box-shadow: 0px -2px 50px ${({ theme }) => theme.color.violetShadow},
-    0px 16px 58px ${({ theme }) => theme.color.violet};
-  border-radius: 4px;
-  padding: 56px;
-
-  &:hover {
-    border: 6px solid ${({ theme }) => theme.color.scienceBlueLight};
-    box-shadow: 0px -2px 50px ${({ theme }) => theme.color.violetShadow},
-      0px 16px 58px ${({ theme }) => theme.color.violetShadow};
-  }
-`;
-
-export const Title = styled.h3`
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 29px;
-  letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.scienceBlue};
-  margin: 0 0 24px 0;
-`;
-
-export const Description = styled.p`
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.slateGray};
-`;
-
-export const Label = styled.label`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 0 8px 0;
-`;
-
-export const LinkLabel = styled.p`
-  width: 60px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.slateGray};
-  margin: 0;
-`;
-
-export const Link = styled.a`
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.scienceBlue};
-  margin-left: 8px;
-  text-decoration: none;
+  grid-gap: 32px;
+  list-style: none;
+  padding: 0;
 `;

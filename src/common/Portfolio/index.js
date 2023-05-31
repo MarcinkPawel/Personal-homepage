@@ -1,91 +1,30 @@
 import {
-  PortfolioStyled,
+  Wrapper,
   Header,
   Icon,
   Heading,
   SubHeading,
   TailsList,
-  Tail,
-  Title,
-  Description,
-  Label,
-  LinkLabel,
-  Link
 } from "./styled";
-import gitHubIcon from "../../images/gitHubIcon.svg";
+import { RepoTile } from "./RepoTile";
+import gitIcon from "../../images/gitIcon.svg";
+import { Loading } from "./Loading";
+import { ErrorNotice } from "./Error";
 
 export const Portfolio = () => {
   return (
-    <PortfolioStyled>
+    <Wrapper>
       <Header>
-        <Icon src={gitHubIcon} alt="" />
+        <Icon />
         <Heading>Portfolio</Heading>
         <SubHeading>My recent projects</SubHeading>
       </Header>
       <TailsList>
-        <Tail>
-          <Title>to do react</Title>
-          <Description>asd as ds fsdfsrfewfsf e wdfasfsg rgwe xfdsa ggsf sfrwd ac rgsfewfa g h efscvcxzfsdf  dasd e efds </Description>
-          <Label>
-          <LinkLabel>Demo:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-          <Label>
-          <LinkLabel>Code:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-        </Tail>
-
-        <Tail>
-          <Title>to do react</Title>
-          <Description>asd as ds fsdfsrfewfsf e wdfasfsg rgwe xfdsa ggsf sfrwd ac rgsfewfa g h efscvcxzfsdf  dasd e efds </Description>
-          <Label>
-          <LinkLabel>Demo:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-          <Label>
-          <LinkLabel>Code:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-        </Tail>
-        <Tail>
-          <Title>to do react</Title>
-          <Description>asd as ds fsdfsrfewfsf e wdfasfsg rgwe xfdsa ggsf sfrwd ac rgsfewfa g h efscvcxzfsdf  dasd e efds </Description>
-          <Label>
-          <LinkLabel>Demo:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-          <Label>
-          <LinkLabel>Code:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-        </Tail>
-        <Tail>
-          <Title>to do react</Title>
-          <Description>asd as ds fsdfsrfewfsf e wdfasfsg rgwe xfdsa ggsf sfrwd ac rgsfewfa g h efscvcxzfsdf  dasd e efds </Description>
-          <Label>
-          <LinkLabel>Demo:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-          <Label>
-          <LinkLabel>Code:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-        </Tail>
-        <Tail>
-          <Title>to do react</Title>
-          <Description>asd as ds fsdfsrfewfsf e wdfasfsg rgwe xfdsa ggsf sfrwd ac rgsfewfa g h efscvcxzfsdf  dasd e efds </Description>
-          <Label>
-          <LinkLabel>Demo:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-          <Label>
-          <LinkLabel>Code:</LinkLabel>
-          <Link href="https://google.com/"> www.google.com </Link>
-          </Label>
-        </Tail>
-        
+        <RepoTile />
+        <RepoTile />
+        <RepoTile />
+        <RepoTile />
       </TailsList>
-    </PortfolioStyled>
+    </Wrapper>
   );
 };
