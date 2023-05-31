@@ -1,14 +1,11 @@
 import styled from "styled-components";
-import button_hire from "../../images/button_hire.png";
-import button_hire_hover from "../../images/button_hire_hover.png";
+import { Button } from "../Button";
+import { ReactComponent as Envelope } from "../../images/message.svg";
 
 export const AboutStyle = styled.div`
-  max-width: 1089px;
+  max-width: 1216px;
   height: 384px;
-  background: ${({ theme }) => theme.color.white};
-  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
-    0px 16px 58px rgba(9, 10, 51, 0.03);
-  border-radius: 4px;
+  background: ${({ theme }) => theme.color.whiteLilac};
   margin-bottom: 72px;
   display: flex;
   flex-direction: row;
@@ -47,6 +44,7 @@ export const Heading = styled.h1`
 `;
 
 export const Comment = styled.p`
+  max-width: 633px;
   color: ${({ theme }) => theme.color.slateGray};
   font-size: 20px;
   font-weight: 400;
@@ -55,14 +53,14 @@ export const Comment = styled.p`
   margin: 32px 0;
 `;
 
-export const Button = styled.button`
+export const StyledButton = styled(Button)`
+  display: inline-flex;
+  align-items: center;
+  margin-top: 32px;
+  cursor: pointer;
   width: 154px;
-  height: 49px;
-  border: 1px solid ${({ theme }) => theme.color.violet};
-  border-radius: 4px;
-  background: url(${button_hire});
+`;
 
-  &:hover {
-    background: url(${button_hire_hover});
-  }
+export const EnvelopeIcon = styled(Envelope)`
+  margin-right: 16px;
 `;
