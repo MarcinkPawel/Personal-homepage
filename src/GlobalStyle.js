@@ -13,8 +13,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        display: inherit;
         font-family: 'Inter', sans-serif;
-        background-color: ${({ theme }) => theme.color.mercury};
+        font-style: normal;
+        word-break: break-word;
+        letter-spacing: 0.05em;
     }
 `;
