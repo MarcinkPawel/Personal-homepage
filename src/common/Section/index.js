@@ -9,19 +9,21 @@ import {
   Emoji,
 } from "./styled";
 
-export const Section = ({ heading }) => {
+export const Section = ({ heading, skills }) => {
   return (
     <SectionStyle>
       <Heading>
-        {heading} <Emoji>&#128736;&#65039;</Emoji>
+        {heading}
       </Heading>
       <Divider />
       <Content>
         <List>
-          <ListItem>
-            <ListPoint />
-            Czesc
-          </ListItem>
+          {skills.map((skill) => (
+            <ListItem key={skill}>
+              <ListPoint />
+              {skill}
+            </ListItem>
+          ))}
         </List>
       </Content>
     </SectionStyle>
