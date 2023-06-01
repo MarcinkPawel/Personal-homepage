@@ -4,7 +4,7 @@ import {
   FooterContent,
   LetsTalk,
   Address,
-  EmailWrapper,
+  EmailContainer,
   SocialList,
   SocialList_Item,
   SocialList_Item_Link,
@@ -16,7 +16,7 @@ export const Footer = () => (
   <Wrapper>
     <LetsTalk>Let's talk!</LetsTalk>
     <Address>
-      <EmailWrapper>
+      <EmailContainer>
         <ContactLink
           href={`mailto:${myData.email}`}
           title={myData.email}
@@ -24,7 +24,7 @@ export const Footer = () => (
         >
           {myData.email}
         </ContactLink>
-      </EmailWrapper>
+      </EmailContainer>
       <FooterContent>
         I'm always open to new projects whenever I have the time. If you have a
         website, dashboard or mobile app in mind and need some help to make your

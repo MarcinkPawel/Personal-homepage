@@ -14,4 +14,8 @@ export const Button = styled.a`
   &:hover {
     box-shadow: 0 0 0 2px ${({ theme }) => theme.color.anakiwa};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 18px;
+  }
 `;

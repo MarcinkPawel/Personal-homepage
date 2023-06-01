@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled.footer`
   margin-top: 120px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin: 48px 16px 0 16px;
+  }
 `;
 
 export const LetsTalk = styled.h2`
@@ -16,8 +20,12 @@ export const Address = styled.address`
   font-style: unset;
 `;
 
-export const EmailWrapper = styled.div`
+export const EmailContainer = styled.div`
   margin: 24px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin: 12px 0;
+  }
 `;
 
 export const ContactLink = styled.a`
@@ -30,6 +38,10 @@ export const ContactLink = styled.a`
   &:hover {
     color: ${({ theme }) => theme.color.scienceBlue};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 18px;
+  }
 `;
 
 export const FooterContent = styled.p`
@@ -38,6 +50,10 @@ export const FooterContent = styled.p`
   line-height: 1.4;
   margin: 0;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 14px;
+  }
 `;
 
 export const SocialList = styled.ul`
@@ -46,11 +62,19 @@ export const SocialList = styled.ul`
   display: flex;
   list-style: none;
   padding: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-top: 40px;
+  }
 `;
 
 export const SocialList_Item = styled.li`
   &:not(:last-child) {
     margin-right: 24px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+      margin-right: 16px;
+    }
   }
 `;
 
@@ -65,4 +89,8 @@ export const SocialList_Item_Link = styled.a`
 
 export const iconStyled = (Icon) => styled(Icon)`
   height: auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    width: 32px;
+  }
 `;
