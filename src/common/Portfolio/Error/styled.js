@@ -6,6 +6,11 @@ export const Wrapper = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.color.whiteLilac};
   padding-top: 90px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+      padding: 0 16px;
+      margin: 30px 16px 0 16px;
+    }
 `;
 
 export const Header = styled.h3`
@@ -13,11 +18,19 @@ export const Header = styled.h3`
   line-height: 29px;
   font-weight: 700;
   padding-top: 23px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: 17px;
+    }
 `;
 
 export const WarningText = styled.p`
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
-  padding-top: 32px;
+  padding: 32px 0;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: 16px;
+    }
 `;

@@ -15,6 +15,11 @@ export const Wrapper = styled.div`
   color: ${({ theme }) => theme.color.black};
   display: grid;
   justify-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 17px;
+    margin: 32px 16px 0 16px;
+  }
 `;
 
 export const SpinnerStyled = styled(Spinner)`
@@ -22,4 +27,9 @@ export const SpinnerStyled = styled(Spinner)`
   animation: ${rotate} 1s linear infinite;
   color: ${({ theme }) => theme.color.scienceBlue};
   height: auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    width: 60px;
+    margin-top: 32px;
+  }
 `;

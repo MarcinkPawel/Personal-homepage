@@ -15,6 +15,11 @@ export const Tile = styled.div`
     box-shadow: 0px -2px 50px ${({ theme }) => theme.color.violetShadow},
       0px 16px 58px ${({ theme }) => theme.color.violetShadow};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    padding: 20px;
+    margin: 0 16px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -24,6 +29,11 @@ export const Title = styled.h3`
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.scienceBlue};
   margin: 0 0 24px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 16px;
+    margin: 0 0 16px 0;
+  }
 `;
 
 export const Description = styled.p`
@@ -32,7 +42,12 @@ export const Description = styled.p`
   line-height: 25px;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.slateGray};
-  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
 `;
 
 export const Label = styled.label`
@@ -40,6 +55,11 @@ export const Label = styled.label`
   flex-direction: row;
   align-items: center;
   margin: 0 0 8px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 `;
 
 export const LinkLabel = styled.p`

@@ -20,10 +20,7 @@ export const Portfolio = () => {
         <SubHeading>My recent projects</SubHeading>
       </Header>
       <TailsList>
-        <RepoTile />
-        <RepoTile />
-        <RepoTile />
-        <RepoTile />
+        <ErrorNotice />
       </TailsList>
     </Wrapper>
   );
