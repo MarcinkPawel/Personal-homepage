@@ -8,6 +8,11 @@ export const SectionStyle = styled.section`
   border-radius: 4px;
   padding: 32px;
   margin-bottom: 72px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    padding: 16px;
+    margin: 48px 14px 50px 14px;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -16,6 +21,11 @@ export const Heading = styled.h2`
   color: ${({ theme }) => theme.color.black};
   padding-bottom: 16px;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    padding-bottom: 12px;
+    font-size: 18px;
+  }
 `;
 
 export const Divider = styled.hr`
@@ -25,20 +35,22 @@ export const Divider = styled.hr`
 
 export const Content = styled.div`
   margin-top: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-top: 12px;
+  }
 `;
 
 export const List = styled.ul`
-  margin: 0;
   padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 115px;
-  grid-row-gap: 0px;
+  grid-gap: 8px 32px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     grid-template-columns: 1fr;
-    grid-column-gap: 115px;
-    grid-row-gap: 0px;
+    font-size: 14px;
   }
 `;
 
@@ -50,6 +62,11 @@ export const ListItem = styled.li`
   display: flex;
   align-items: center;
   margin-bottom: 8px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    line-height: 17px;
+    font-size: 14px;
+  }
 `;
 
 export const ListPoint = styled.div`
@@ -59,9 +76,10 @@ export const ListPoint = styled.div`
   border-radius: 50%;
   display: inline-block;
   margin-right: 16px;
-`;
 
-export const Emoji = styled.span`
- font-size: 24px;
- margin-left: 16px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    height: 6px;
+    width: 6px;
+    margin-right: 8px;
+  }
 `;

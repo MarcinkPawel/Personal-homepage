@@ -17,5 +17,6 @@ export const GlobalStyle = createGlobalStyle`
         font-style: normal;
         word-break: break-word;
         letter-spacing: 0.05em;
+        background: ${({ theme }) => theme.color.whiteLilac};
     }
 `;

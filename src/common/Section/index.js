@@ -5,8 +5,7 @@ import {
   Content,
   List,
   ListItem,
-  ListPoint,
-  Emoji,
+  ListPoint
 } from "./styled";
 
 export const Section = ({ heading, skills }) => {

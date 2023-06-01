@@ -3,13 +3,21 @@ import { Button } from "../Button";
 import { ReactComponent as Envelope } from "../../images/message.svg";
 
 export const AboutStyle = styled.div`
-  max-width: 1216px;
-  height: 384px;
-  background: ${({ theme }) => theme.color.whiteLilac};
-  margin-bottom: 72px;
-  display: flex;
-  flex-direction: row;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 64px;
   align-items: center;
+  max-width: 1097px;
+  margin-bottom: 63px;
+  font-size: 20px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+    margin: 0 16px;
+
+  }
 `;
 
 export const Selfi = styled.img`
@@ -17,13 +25,19 @@ export const Selfi = styled.img`
   height: 384px;
   border-radius: 50%;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    width: 132px;
+    height: 132px;
+    align-self: flex-start;
+    margin-bottom: 7px;
+  }
 `;
 
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 66px;
 `;
 
 export const SubHeading = styled.span`
@@ -31,7 +45,6 @@ export const SubHeading = styled.span`
   color: ${({ theme }) => theme.color.slateGray};
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 12px;
 `;
 
 export const Heading = styled.h1`
@@ -39,8 +52,13 @@ export const Heading = styled.h1`
   font-weight: 900;
   line-height: 46px;
   letter-spacing: 0.05em;
-  margin: 0;
+  margin: 12px 0 0 0;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 22px;
+    margin-top: 8px;
+  }
 `;
 
 export const Comment = styled.p`
@@ -51,6 +69,12 @@ export const Comment = styled.p`
   line-height: 140%;
   letter-spacing: 0.05em;
   margin: 32px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 17px;
+    line-height: 24px;
+    margin: 16px 0 24px 0;
+  }
 `;
 
 export const StyledButton = styled(Button)`
@@ -59,6 +83,10 @@ export const StyledButton = styled(Button)`
   margin-top: 32px;
   cursor: pointer;
   width: 154px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-top: 0;
+  }
 `;
 
 export const EnvelopeIcon = styled(Envelope)`
