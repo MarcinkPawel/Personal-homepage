@@ -5,6 +5,7 @@ export const myData = {
   email: "marcinkowski.pwl@gmail.com",
   github: "https://github.com/MarcinkPawel",
   link: "addLater",
+  githubUsername: "MarcinkPawel",
 
   currentSkills: [
       "Semantic & accessible HTML",
