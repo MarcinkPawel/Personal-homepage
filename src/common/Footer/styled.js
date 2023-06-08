@@ -13,7 +13,7 @@ export const LetsTalk = styled.h2`
   text-transform: uppercase;
   letter-spacing: initial;
   margin: 0;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.site.text};
 `;
 
 export const Address = styled.address`
@@ -29,14 +29,14 @@ export const EmailContainer = styled.div`
 `;
 
 export const ContactLink = styled.a`
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.colors.textPrimary};
   font-weight: 900;
   font-size: 32px;
   text-decoration: none;
   transition: color 0.3s;
 
   &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -49,7 +49,7 @@ export const FooterContent = styled.p`
   font-size: 18px;
   line-height: 1.4;
   margin: 0;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.colors.textPrimary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 14px;
@@ -79,11 +79,11 @@ export const SocialList_Item = styled.li`
 `;
 
 export const SocialList_Item_Link = styled.a`
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.colors.textPrimary};
   transition: color 0.3s;
 
   &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;
 

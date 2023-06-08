@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "../Button";
+import { StyledLink } from "../StyledLink";
 import { ReactComponent as Envelope } from "../../images/message.svg";
 
 export const AboutStyle = styled.div`
@@ -42,7 +42,7 @@ export const Info = styled.div`
 
 export const SubHeading = styled.span`
   font-size: 12px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.site.text};
   font-weight: 700;
   text-transform: uppercase;
 `;
@@ -53,7 +53,7 @@ export const Heading = styled.h1`
   line-height: 46px;
   letter-spacing: 0.05em;
   margin: 12px 0 0 0;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.colors.textPrimary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 22px;
@@ -63,7 +63,7 @@ export const Heading = styled.h1`
 
 export const Comment = styled.p`
   max-width: 633px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.site.text};
   font-size: 20px;
   font-weight: 400;
   line-height: 140%;
@@ -77,7 +77,7 @@ export const Comment = styled.p`
   }
 `;
 
-export const StyledButton = styled(Button)`
+export const StyledButton = styled(StyledLink)`
   display: inline-flex;
   align-items: center;
   margin-top: 32px;

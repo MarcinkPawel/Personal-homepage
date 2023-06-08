@@ -11,8 +11,8 @@ export const Wrapper = styled.div`
   text-align: center;
   margin-top: 88px;
   font-size: 20px;
-  background-color: ${({ theme }) => theme.color.whiteLilac};
-  color: ${({ theme }) => theme.color.black};
+  background-color: ${({ theme }) => theme.colors.site.background};
+  color: ${({ theme }) => theme.colors.textPrimary};
   display: grid;
   justify-items: center;
 
@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
 export const SpinnerStyled = styled(Spinner)`
   margin-top: 48px;
   animation: ${rotate} 1s linear infinite;
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.primary};
   height: auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {

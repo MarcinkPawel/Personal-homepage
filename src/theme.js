@@ -1,19 +1,84 @@
-export const theme = {
-    color: {
-        mineShaft: "#252525", //heading content
-        slateGray: "#6E7E91", //p text
-        white: "#FFFFFF", //problem
-        whiteLilac: "#FBFBFE",
-        scienceBlue: "#0366D6", //blue buttons
-        scienceBlueLight: "#0366D633",
-        mercury: "#E5E5E5", //bg color main
-        alto: "#DADADA", //social media logo
-        violet: "#D1D5DA4D", //box shadow
-        violetShadow: "#D1D5DA33",
-        black: "#252525",
-        anakiwa: "#8CC2FF",
+const colorsName = {
+  white: "#FFFFFF",
+  whiteLilac: "#FBFBFE",
+  porcelain: "#F2F3F4",
+  mercury: "#E5E5E5",
+  ironTransparent: "#D1D5DA4D",
+  tropicalBlue: "#CDE0F7",
+  anakiwa: "#8CC2FF",
+  scienceBlueLightDarkTheme: "#0366D680",
+  dodgerBlue: "#2188FF",
+  shipCove: "#6D93BE",
+  slateGray: "#6E7E91",
+  scienceBlue: "#0366D6",
+  tundora: "#414141",
+  lightBlack: "#313131",
+  mineShaft: "#252525",
+  violet: "#090A3333",
+  violetDarker: "#090A334D",
+};
+
+const commonTheme = {
+  breakpoint: {
+    mobile: 767,
+  },
+  boxShadow: `0 -2px 50px ${colorsName.violet}, 0 16px 58px ${colorsName.violetDarker}`,
+};
+
+export const lightTheme = {
+  ...commonTheme,
+  colors: {
+    primary: colorsName.scienceBlue,
+    textPrimary: colorsName.mineShaft,
+    site: {
+      background: colorsName.whiteLilac,
+      text: colorsName.slateGray,
     },
-    breakpoint: {
-        mobile: 767,
+    styledLink: {
+      text: colorsName.white,
+      border: colorsName.ironTransparent,
+      shadow: colorsName.anakiwa,
     },
+    boxBackground: colorsName.white,
+    headerLine: colorsName.mercury,
+    tile: {
+      border: colorsName.porcelain,
+      borderHover: colorsName.tropicalBlue,
+      header: colorsName.scienceBlue,
+    },
+    themeToggler: {
+      background: colorsName.mercury,
+      border: colorsName.slateGray,
+      icon: colorsName.white,
+    },
+  },
+};
+
+export const darkTheme = {
+  ...commonTheme,
+  colors: {
+    primary: colorsName.dodgerBlue,
+    textPrimary: colorsName.white,
+    site: {
+      background: colorsName.mineShaft,
+      text: colorsName.white,
+    },
+    styledLink: {
+      text: colorsName.white,
+      border: colorsName.ironTransparent,
+      shadow: colorsName.shipCove,
+    },
+    boxBackground: colorsName.lightBlack,
+    headerLine: colorsName.tundora,
+    tile: {
+      border: colorsName.tundora,
+      borderHover: colorsName.scienceBlueLightDarkTheme,
+      header: colorsName.white,
+    },
+    themeToggler: {
+      background: colorsName.slateGray,
+      border: colorsName.white,
+      icon: colorsName.mineShaft,
+    },
+  },
 };

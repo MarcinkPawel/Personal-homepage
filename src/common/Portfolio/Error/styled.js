@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${({ theme }) => theme.color.whiteLilac};
+  background-color: ${({ theme }) => theme.colors.site.background};
   padding-top: 90px;
 
   @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -18,6 +18,7 @@ export const Header = styled.h3`
   line-height: 29px;
   font-weight: 700;
   padding-top: 23px;
+  color: ${({ theme }) => theme.colors.textPrimary};
 
   @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         font-size: 17px;
@@ -29,6 +30,7 @@ export const WarningText = styled.p`
   line-height: 28px;
   font-weight: 400;
   padding: 32px 0;
+  color: ${({ theme }) => theme.colors.textPrimary};
 
   @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         font-size: 16px;

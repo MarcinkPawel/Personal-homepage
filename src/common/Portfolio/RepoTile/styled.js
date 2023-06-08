@@ -4,16 +4,14 @@ export const Tile = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 6px solid ${({ theme }) => theme.color.violet};
-  box-shadow: 0px -2px 50px ${({ theme }) => theme.color.violetShadow},
-    0px 16px 58px ${({ theme }) => theme.color.violet};
+  border: 6px solid ${({ theme }) => theme.colors.tile.border};
+  box-shadow: ${({ theme }) => theme.boxShadow};
   border-radius: 4px;
   padding: 56px;
+  transition: border-color 0.3s;
 
   &:hover {
-    border: 6px solid ${({ theme }) => theme.color.scienceBlueLight};
-    box-shadow: 0px -2px 50px ${({ theme }) => theme.color.violetShadow},
-      0px 16px 58px ${({ theme }) => theme.color.violetShadow};
+    border-color: ${({ theme }) => theme.colors.tile.borderHover};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -27,7 +25,7 @@ export const Title = styled.h3`
   font-weight: 700;
   line-height: 29px;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.tile.header};
   margin: 0 0 24px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -41,7 +39,7 @@ export const Description = styled.p`
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.site.text};
   margin-bottom: 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -68,7 +66,7 @@ export const LinkLabel = styled.p`
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.site.text};
   margin: 0;
 `;
 
@@ -77,7 +75,7 @@ export const Link = styled.a`
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.primary};
   margin-left: 8px;
   text-decoration: none;
 `;

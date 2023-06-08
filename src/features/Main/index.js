@@ -4,10 +4,12 @@ import { Portfolio } from "../../common/Portfolio";
 import { Wrapper } from "./styled";
 import { myData } from "../../myData";
 import { Footer } from "../../common/Footer";
+import { ThemeToggler } from "../ThemeToggle";
 
 export const Main = () => {
   return (
     <Wrapper>
+      <ThemeToggler />
       <About />
       <Section
         heading="My skillset includes 🛠️"

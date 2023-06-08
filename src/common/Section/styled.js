@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const SectionStyle = styled.section`
   max-width: 1216px;
-  background: ${({ theme }) => theme.color.white};
-  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
-    0px 16px 58px rgba(9, 10, 51, 0.03);
+  background: ${({ theme }) => theme.colors.boxBackground};
+  box-shadow: ${({ theme }) => theme.boxShadow};
   border-radius: 4px;
   padding: 32px;
   margin-bottom: 72px;
@@ -18,7 +17,7 @@ export const SectionStyle = styled.section`
 export const Heading = styled.h2`
   font-weight: 900;
   font-size: 30px;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.colors.textPrimary};
   padding-bottom: 16px;
   margin: 0;
 
@@ -29,7 +28,7 @@ export const Heading = styled.h2`
 `;
 
 export const Divider = styled.hr`
-  color: ${({ theme }) => theme.color.violet};
+  color: ${({ theme }) => theme.colors.headerLine};
   margin: 0;
 `;
 
@@ -58,7 +57,7 @@ export const ListItem = styled.li`
   list-style: none;
   font-weight: 400;
   font-size: 18px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.site.text};
   display: flex;
   align-items: center;
   margin-bottom: 8px;
@@ -72,7 +71,7 @@ export const ListItem = styled.li`
 export const ListPoint = styled.div`
   height: 9px;
   width: 9px;
-  background: ${({ theme }) => theme.color.scienceBlue};
+  background: ${({ theme }) => theme.colors.primary};
   border-radius: 50%;
   display: inline-block;
   margin-right: 16px;
