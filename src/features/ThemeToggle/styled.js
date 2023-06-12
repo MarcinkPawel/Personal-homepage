@@ -6,6 +6,11 @@ export const ThemeTogglerWrapper = styled.div`
   margin: 26px auto 0;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin: 21px 17px 0 0;
+    padding: 0;
+  }
 `;
 
 export const Button = styled.button`

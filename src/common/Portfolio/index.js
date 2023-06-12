@@ -54,7 +54,7 @@ export const Portfolio = () => {
                   {repositories.map(
                     ({ id, name, description, homepage, html_url }) => (
                       <RepoTile
-                        id={id}
+                        key={id}
                         name={name}
                         description={description}
                         homepage={homepage}

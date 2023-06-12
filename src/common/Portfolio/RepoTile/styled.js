@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { StyledLink } from "../../StyledLink";
 
 export const Tile = styled.div`
   display: flex;
@@ -51,31 +52,23 @@ export const Description = styled.p`
 export const Label = styled.label`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  gap: 40px;
   margin: 0 0 8px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 14px;
     line-height: 17px;
+    gap: 20px;
   }
 `;
 
-export const LinkLabel = styled.p`
-  width: 60px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.colors.site.text};
-  margin: 0;
-`;
+export const Link = styled(StyledLink)`
+  padding: 12px 40px;
 
-export const Link = styled.a`
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.colors.primary};
-  margin-left: 8px;
-  text-decoration: none;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 30px;
+  }
 `;

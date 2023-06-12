@@ -7,6 +7,7 @@ const colorsName = {
   tropicalBlue: "#CDE0F7",
   anakiwa: "#8CC2FF",
   scienceBlueLightDarkTheme: "#0366D680",
+  scienceBlueLight: "rgba(3, 102, 214, 0.2)",
   dodgerBlue: "#2188FF",
   shipCove: "#6D93BE",
   slateGray: "#6E7E91",
@@ -22,7 +23,8 @@ const commonTheme = {
   breakpoint: {
     mobile: 767,
   },
-  boxShadow: `0 -2px 50px ${colorsName.violet}, 0 16px 58px ${colorsName.violetDarker}`,
+  boxShadow:
+    "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);",
 };
 
 export const lightTheme = {
@@ -42,7 +44,7 @@ export const lightTheme = {
     boxBackground: colorsName.white,
     headerLine: colorsName.mercury,
     tile: {
-      border: colorsName.porcelain,
+      border: colorsName.ironTransparent,
       borderHover: colorsName.tropicalBlue,
       header: colorsName.scienceBlue,
     },
@@ -50,6 +52,11 @@ export const lightTheme = {
       background: colorsName.mercury,
       border: colorsName.slateGray,
       icon: colorsName.white,
+    },
+    link: {
+      text: colorsName.scienceBlue,
+      underline: colorsName.scienceBlueLight,
+      hover: colorsName.dodgerBlue,
     },
   },
 };
@@ -79,6 +86,11 @@ export const darkTheme = {
       background: colorsName.slateGray,
       border: colorsName.white,
       icon: colorsName.mineShaft,
+    },
+    link: {
+      text: colorsName.scienceBlue,
+      underline: colorsName.scienceBlueLight,
+      hover: colorsName.dodgerBlue,
     },
   },
 };
