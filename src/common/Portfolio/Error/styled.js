@@ -7,10 +7,10 @@ export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.site.background};
   padding-top: 90px;
 
-  @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-      padding: 0 16px;
-      margin: 30px 16px 0 16px;
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    padding: 0 16px;
+    margin: 30px 16px 0 16px;
+  }
 `;
 
 export const Header = styled.h3`
@@ -20,9 +20,9 @@ export const Header = styled.h3`
   padding-top: 23px;
   color: ${({ theme }) => theme.colors.textPrimary};
 
-  @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-        font-size: 17px;
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 17px;
+  }
 `;
 
 export const WarningText = styled.p`
@@ -32,7 +32,7 @@ export const WarningText = styled.p`
   padding: 32px 0;
   color: ${({ theme }) => theme.colors.textPrimary};
 
-  @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-        font-size: 16px;
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 16px;
+  }
 `;

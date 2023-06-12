@@ -6,13 +6,13 @@ export const StyledLink = styled.a`
   font-weight: 600;
   font-size: 20px;
   color: ${({ theme }) => theme.colors.styledLink.text};
-  background-color:  ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary};
   border: 1px solid ${({ theme }) => theme.colors.styledLink.border};
   border-radius: 4px;
   transition: box-shadow 0.3s;
 
   &:hover {
-    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.styledLink.shadow}; 
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.styledLink.shadow};
   }
 
   &:active {

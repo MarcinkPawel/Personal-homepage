@@ -16,7 +16,6 @@ export const AboutStyle = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 12px;
     margin: 0 16px;
-
   }
 `;
 

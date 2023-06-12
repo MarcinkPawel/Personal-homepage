@@ -5,26 +5,22 @@ import {
   Content,
   List,
   ListItem,
-  ListPoint
+  ListPoint,
 } from "./styled";
 
-export const Section = ({ heading, skills }) => {
-  return (
-    <SectionStyle>
-      <Heading>
-        {heading}
-      </Heading>
-      <Divider />
-      <Content>
-        <List>
-          {skills.map((skill) => (
-            <ListItem key={skill}>
-              <ListPoint />
-              {skill}
-            </ListItem>
-          ))}
-        </List>
-      </Content>
-    </SectionStyle>
-  );
-};
+export const Section = ({ heading, skills }) => (
+  <SectionStyle>
+    <Heading>{heading}</Heading>
+    <Divider />
+    <Content>
+      <List>
+        {skills.map((skill) => (
+          <ListItem key={skill}>
+            <ListPoint />
+            {skill}
+          </ListItem>
+        ))}
+      </List>
+    </Content>
+  </SectionStyle>
+);
