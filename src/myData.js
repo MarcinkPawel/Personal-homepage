@@ -4,7 +4,7 @@ export const myData = {
     "🧑🏽💻 I'm passionate Frontend Developer in love with React. Currently looking for first job opportunities.",
   email: "marcinkowski.pwl@gmail.com",
   github: "https://github.com/MarcinkPawel",
-  link: "addLater",
+  linkedin: "https://www.linkedin.com/in/marcinkowski-pwl",
   githubUsername: "MarcinkPawel",
 
   currentSkills: [
