@@ -1,6 +1,6 @@
 import { iconStyled } from "./styled";
-import { ReactComponent as gitIcon } from "../../images/gitIcon.svg";
-import { ReactComponent as linkedIcon } from "../../images/linkedIcon.svg";
+import { ReactComponent as gitIcon } from "../../assets/gitIcon.svg";
+import { ReactComponent as linkedIcon } from "../../assets/linkedIcon.svg";
 import { myData } from "../../myData";
 
 export const socialMediaList = [

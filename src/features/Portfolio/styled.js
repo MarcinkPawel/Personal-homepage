@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as gitIcon } from "../../images/gitIcon.svg";
+import { ReactComponent as gitIcon } from "../../assets/gitIcon.svg";
 
 export const Wrapper = styled.div`
   padding: 0;

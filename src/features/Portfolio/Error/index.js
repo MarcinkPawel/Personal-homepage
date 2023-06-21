@@ -1,7 +1,7 @@
-import { ReactComponent as ErrorIcon } from "../../../images/danger.svg";
+import { ReactComponent as ErrorIcon } from "../../../assets/danger.svg";
 import { Wrapper, Header, WarningText } from "./styled";
 import { myData } from "../../../myData";
-import { StyledLink } from "../../StyledLink";
+import { StyledLink } from "../../../common/StyledLink";
 
 export const ErrorNotice = () => (
   <Wrapper>

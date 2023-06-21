@@ -26,9 +26,7 @@ export const Footer = () => (
         </ContactLink>
       </EmailContainer>
       <FooterContent>
-        I'm always open to new projects whenever I have the time. If you have a
-        website, dashboard or mobile app in mind and need some help to make your
-        ideas come to life, feel free to conatct me🤞
+        {myData.footerInfo}
       </FooterContent>
       <SocialList>
         {socialMediaList.map(({ name, url, Icon }) => (

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { StyledLink } from "../StyledLink";
-import { ReactComponent as Envelope } from "../../images/message.svg";
+import { StyledLink } from "../../common/StyledLink";
+import { ReactComponent as Envelope } from "../../assets/message.svg";
 
 export const AboutStyle = styled.div`
   margin-top: 0;

@@ -9,10 +9,11 @@ import {
   EnvelopeIcon,
 } from "./styled";
 import { myData } from "../../myData";
+import myPicture from "../../assets/pMarcinkowski.png";
 
 export const About = () => (
   <AboutStyle>
-    <Selfi />
+    <Selfi src={myPicture} alt="Pawel Marcinkowski" />
     <Info>
       <SubHeading>This is</SubHeading>
       <Heading>{myData.name}</Heading>

@@ -1,9 +1,9 @@
 import { Section } from "../../common/Section";
-import { About } from "../../common/About";
-import { Portfolio } from "../../common/Portfolio";
+import { About } from "../About";
+import { Portfolio } from "../Portfolio";
 import { Wrapper } from "./styled";
 import { myData } from "../../myData";
-import { Footer } from "../../common/Footer";
+import { Footer } from "../Footer";
 import { ThemeToggler } from "../ThemeToggle";
 
 export const Main = () => {
