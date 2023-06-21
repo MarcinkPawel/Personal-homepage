@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
-import { ReactComponent as sunIcon } from "../../images/sunIcon.svg";
+import { ReactComponent as sunIcon } from "../../assets/sunIcon.svg";
 
 export const ThemeTogglerWrapper = styled.div`
   margin: 26px auto 0;
