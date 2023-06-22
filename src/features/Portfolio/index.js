@@ -5,7 +5,7 @@ import {
   fetchRepositories,
   selectRepositories,
   selectRepositoriesStatus,
-} from "../../features/getGitData/gitDataSlice";
+} from "../getGitData/gitDataSlice";
 import {
   Wrapper,
   Header,

@@ -6,21 +6,16 @@ import { myData } from "../../myData";
 import { Footer } from "../Footer";
 import { ThemeToggler } from "../ThemeToggle";
 
-export const Main = () => {
-  return (
-    <Wrapper>
-      <ThemeToggler />
-      <About />
-      <Section
-        heading="My skillset includes 🛠️"
-        skills={myData.currentSkills}
-      />
-      <Section
-        heading="What I want to learn next 🚀"
-        skills={myData.skillsToLearn}
-      />
-      <Portfolio />
-      <Footer />
-    </Wrapper>
-  );
-};
+export const Main = () => (
+  <Wrapper>
+    <ThemeToggler />
+    <About />
+    <Section heading="My skillset includes 🛠️" skills={myData.currentSkills} />
+    <Section
+      heading="What I want to learn next 🚀"
+      skills={myData.skillsToLearn}
+    />
+    <Portfolio />
+    <Footer />
+  </Wrapper>
+);
