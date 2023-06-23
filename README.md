@@ -1,10 +1,55 @@
-# Getting Started with Create React App
+# My portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web portfolio showcases the work of Paweł Marcinkowski, an enthusiastic Frontend Developer with a deep passion for React. The portfolio demonstrates Paweł's skill set, recent projects, and contact information. Whether you're interested in hiring Paweł or exploring his creative endeavors, this portfolio provides a comprehensive overview of his capabilities.
 
-## Available Scripts
+![preview](https://github.com/MarcinkPawel/Personal-homepage/assets/103523918/f243a6af-c12e-4fb8-b394-b1696ca2af5d)
 
-In the project directory, you can run:
+## Technologies Used
+
+The web portfolio is built using the following technologies:
+
+- HTML
+- CSS
+- JavaScript ES6
+- Flex
+- Grid
+- Markdown
+- Node.js
+- Styled-components
+- Create-react-app
+- React
+- React Redux
+- React Redux-Toolkit
+- React Redux-Saga
+- Axios
+
+## Demo
+
+
+## Projects (Summary)
+Paweł's portfolio includes the following projects:
+
+Currency-exchange-JS: A simple currency conversion web app using HTML, CSS, and JavaScript. Rates are fixed, and it supports conversions from Polish currency to five other currencies accurately.
+
+Exchange-currency-React: A currency conversion web app built with React, HTML, CSS, and JavaScript. It fetches rates from an API and allows users to calculate conversions between 150 different currencies.
+
+movies-browser: A responsive movie browsing web app developed with HTML, CSS, JavaScript, React, Redux, Git, and GitHub. It provides access to a vast film database and details about actors and crew.
+
+Personal-homepage: Paweł's personal homepage showcasing his portfolio, projects, and skills. It reflects his passion for web development and design.
+
+ToDo-List-JS: A minimalist and user-friendly to-do list web app built with HTML, CSS, and JavaScript. It offers seamless task management without page refresh.
+
+Todo-List-with-React: A simple and easy-to-use web app for day-to-day planning and task management.
+
+Please note that Paweł continues to create new projects, and the portfolio will be updated over time to include his latest work.
+
+## Contact Information
+
+To get in touch with Paweł Marcinkowski, you can reach out via email:
+
+- Email: marcinkowski.pwl@gmail.com
+
+Paweł is always open to taking on new projects.
 
 ### `npm start`
 
@@ -13,11 +58,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -28,43 +68,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
