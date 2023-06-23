@@ -1,6 +1,7 @@
 # My portfolio
 
 This web portfolio showcases the work of Paweł Marcinkowski, an enthusiastic Frontend Developer with a deep passion for React. The portfolio demonstrates Paweł's skill set, recent projects, and contact information. Whether you're interested in hiring Paweł or exploring his creative endeavors, this portfolio provides a comprehensive overview of his capabilities.
+Visit website [**here (click)**](https://marcinkpawel.github.io/Personal-homepage/)
 
 ![preview](https://github.com/MarcinkPawel/Personal-homepage/assets/103523918/f243a6af-c12e-4fb8-b394-b1696ca2af5d)
 
