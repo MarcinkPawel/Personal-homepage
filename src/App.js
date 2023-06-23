@@ -5,7 +5,7 @@ import { darkTheme, lightTheme } from "./theme";
 import { Main } from "./features/Main";
 import { selectIsDarkTheme } from "./features/ThemeToggle/themeSlice";
 
-export default () => {
+function App() {
   const isDarkTheme = useSelector(selectIsDarkTheme);
 
   return (
@@ -14,4 +14,6 @@ export default () => {
       <Main />
     </ThemeProvider>
   );
-};
+}
+
+export default App;
