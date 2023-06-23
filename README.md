@@ -25,6 +25,9 @@ The web portfolio is built using the following technologies:
 
 ## Demo
 
+![homepageDemo1](https://github.com/MarcinkPawel/Personal-homepage/assets/103523918/922b9066-a776-4378-bed8-c3d2cbace91d)
+
+
 
 ## Projects (Summary)
 Paweł's portfolio includes the following projects:
