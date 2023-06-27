@@ -55,6 +55,11 @@ To get in touch with Paweł Marcinkowski, you can reach out via email:
 
 Paweł is always open to taking on new projects.
 
+
+## Available Scripts
+
+In the project directory, you can run:
+
 ### `npm start`
 
 Runs the app in the development mode.\
