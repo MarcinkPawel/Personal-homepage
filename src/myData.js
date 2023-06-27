@@ -2,7 +2,8 @@ export const myData = {
   name: "Paweł Marcinkowski",
   description:
     "🧑💻 I am an enthusiastic Frontend Developer deeply passionate about React. Presently, I am actively seeking my initial job prospects",
-  footerInfo: "I'm always up for taking on new projects whenever I've got some free time. If you've got a website, dashboard, or mobile app in mind and need a helping hand to bring your ideas to life, feel free to hit me up!🖖",
+  footerInfo:
+    "I'm always up for taking on new projects whenever I've got some free time. If you've got a website, dashboard, or mobile app in mind and need a helping hand to bring your ideas to life, feel free to hit me up!🖖",
   email: "marcinkowski.pwl@gmail.com",
   github: "https://github.com/MarcinkPawel",
   linkedin: "https://www.linkedin.com/in/marcinkowski-pwl",

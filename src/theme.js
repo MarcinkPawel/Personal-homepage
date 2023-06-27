@@ -7,7 +7,7 @@ const colorsName = {
   tropicalBlue: "#CDE0F7",
   anakiwa: "#8CC2FF",
   scienceBlueLightDarkTheme: "#0366D680",
-  scienceBlueLight: "rgba(3, 102, 214, 0.2)",
+  scienceBlueLight: "#0366D633",
   dodgerBlue: "#2188FF",
   shipCove: "#6D93BE",
   slateGray: "#6E7E91",

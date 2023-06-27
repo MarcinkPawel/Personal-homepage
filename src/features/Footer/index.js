@@ -25,9 +25,7 @@ export const Footer = () => (
           {myData.email}
         </ContactLink>
       </EmailContainer>
-      <FooterContent>
-        {myData.footerInfo}
-      </FooterContent>
+      <FooterContent>{myData.footerInfo}</FooterContent>
       <SocialList>
         {socialMediaList.map(({ name, url, Icon }) => (
           <SocialList_Item key={name}>

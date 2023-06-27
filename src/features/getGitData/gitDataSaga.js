@@ -6,11 +6,9 @@ import {
   fetchRepositoriesSuccess,
 } from "./gitDataSlice";
 
-const loadingDelay = 2_000;
-
 function* fetchRepositoriesHandler({ payload: username }) {
   try {
-    yield delay(loadingDelay);
+    yield delay(2000);
     const repositories = yield call(fetchGitData, username);
     yield put(fetchRepositoriesSuccess(repositories));
   } catch (error) {
