@@ -8,7 +8,7 @@ import {
   StyledButton,
   EnvelopeIcon,
 } from "./styled";
-import { myData } from "../../myData";
+import { personalData } from "../../personalData";
 import myPicture from "../../assets/pMarcinkowski.png";
 
 export const About = () => (
@@ -16,11 +16,11 @@ export const About = () => (
     <Selfi src={myPicture} alt="Pawel Marcinkowski" />
     <Info>
       <SubHeading>This is</SubHeading>
-      <Heading>{myData.name}</Heading>
-      <Comment>{myData.description} </Comment>
+      <Heading>{personalData.name}</Heading>
+      <Comment>{personalData.description} </Comment>
       <StyledButton
-        href={`mailto:${myData.email}`}
-        title={myData.email}
+        href={`mailto:${personalData.email}`}
+        title={personalData.email}
         rel="noopener noreferrer"
       >
         <EnvelopeIcon />

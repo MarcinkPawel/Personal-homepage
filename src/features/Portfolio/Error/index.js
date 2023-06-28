@@ -1,6 +1,6 @@
 import { ReactComponent as ErrorIcon } from "../../../assets/danger.svg";
 import { Wrapper, Header, WarningText } from "./styled";
-import { myData } from "../../../myData";
+import { personalData } from "../../../personalData";
 import { StyledLink } from "../../../common/StyledLink";
 
 export const ErrorNotice = () => (
@@ -12,8 +12,8 @@ export const ErrorNotice = () => (
       Github.
     </WarningText>
     <StyledLink
-      href={`https://github.com/${myData.githubUsername}`}
-      title="Github Paweł Marcinkowski"
+      href={`https://github.com/${personalData.githubUsername}`}
+      title={`Github ${personalData.name}`}
       target="_blank"
       rel="noreferrer noopener"
     >

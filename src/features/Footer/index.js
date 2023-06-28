@@ -6,10 +6,10 @@ import {
   Address,
   EmailContainer,
   SocialList,
-  SocialList_Item,
-  SocialList_Item_Link,
+  SocialListItem,
+  SocialListItemLink,
 } from "./styled";
-import { myData } from "../../myData";
+import { personalData } from "../../personalData";
 import { socialMediaList } from "./socialMediaList";
 
 export const Footer = () => (
@@ -18,26 +18,26 @@ export const Footer = () => (
     <Address>
       <EmailContainer>
         <ContactLink
-          href={`mailto:${myData.email}`}
-          title={myData.email}
+          href={`mailto:${personalData.email}`}
+          title={personalData.email}
           rel="noopener noreferrer"
         >
-          {myData.email}
+          {personalData.email}
         </ContactLink>
       </EmailContainer>
-      <FooterContent>{myData.footerInfo}</FooterContent>
+      <FooterContent>{personalData.footerInfo}</FooterContent>
       <SocialList>
         {socialMediaList.map(({ name, url, Icon }) => (
-          <SocialList_Item key={name}>
-            <SocialList_Item_Link
+          <SocialListItem key={name}>
+            <SocialListItemLink
               href={url}
               title={name}
               target="_blank"
               rel="noreferrer noopener"
             >
               <Icon />
-            </SocialList_Item_Link>
-          </SocialList_Item>
+            </SocialListItemLink>
+          </SocialListItem>
         ))}
       </SocialList>
     </Address>

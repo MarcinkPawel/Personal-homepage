@@ -1,4 +1,4 @@
-export const myData = {
+export const personalData = {
   name: "Paweł Marcinkowski",
   description:
     "🧑💻 I am an enthusiastic Frontend Developer deeply passionate about React. Presently, I am actively seeking my initial job prospects",

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { myData } from "../../myData";
+import { personalData } from "../../personalData";
 import {
   fetchRepositories,
   selectRepositories,
@@ -26,7 +26,7 @@ export const Portfolio = () => {
   const repositories = useSelector(selectRepositories);
 
   useEffect(() => {
-    dispatch(fetchRepositories(myData.githubUsername));
+    dispatch(fetchRepositories(personalData.githubUsername));
   }, [dispatch]);
 
   return (
@@ -52,13 +52,13 @@ export const Portfolio = () => {
               return (
                 <TailsList repositories={repositories}>
                   {repositories.map(
-                    ({ id, name, description, homepage, html_url }) => (
+                    ({ id, name, description, homepage, htmlUrl }) => (
                       <RepoTile
                         key={id}
                         name={name}
                         description={description}
                         homepage={homepage}
-                        html_url={html_url}
+                        html_url={htmlUrl}
                       />
                     )
                   )}

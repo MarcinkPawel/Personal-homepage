@@ -1,7 +1,6 @@
 import {
   SectionStyle,
   Heading,
-  Divider,
   Content,
   List,
   ListItem,
@@ -11,7 +10,6 @@ import {
 export const Section = ({ heading, skills }) => (
   <SectionStyle>
     <Heading>{heading}</Heading>
-    <Divider />
     <Content>
       <List>
         {skills.map((skill) => (
