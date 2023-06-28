@@ -20,16 +20,12 @@ export const Heading = styled.h2`
   color: ${({ theme }) => theme.colors.textPrimary};
   padding-bottom: 16px;
   margin: 0;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.headerLine};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     padding-bottom: 12px;
     font-size: 18px;
   }
-`;
-
-export const Divider = styled.hr`
-  color: ${({ theme }) => theme.colors.headerLine};
-  margin: 0;
 `;
 
 export const Content = styled.div`

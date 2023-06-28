@@ -68,7 +68,7 @@ export const SocialList = styled.ul`
   }
 `;
 
-export const SocialList_Item = styled.li`
+export const SocialListItem = styled.li`
   &:not(:last-child) {
     margin-right: 24px;
 
@@ -78,7 +78,7 @@ export const SocialList_Item = styled.li`
   }
 `;
 
-export const SocialList_Item_Link = styled.a`
+export const SocialListItemLink = styled.a`
   color: ${({ theme }) => theme.colors.textPrimary};
   transition: color 0.3s;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { StyledLink } from "../../common/StyledLink";
 import { ReactComponent as Envelope } from "../../assets/message.svg";
 
-export const AboutStyle = styled.div`
+export const AboutStyle = styled.article`
   margin-top: 0;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -57,6 +57,7 @@ export const Heading = styled.h1`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 22px;
     margin-top: 8px;
+    line-height: 27px;
   }
 `;
 
